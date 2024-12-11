@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: siddarthdocker10/go-web-app
+  pullPolicy: IfNotPresent
+  tag: "latest"  # You can update this tag dynamically in your workflow
+
+service:
+  name: go-web-app
+  type: ClusterIP
+  port: 8080
+
